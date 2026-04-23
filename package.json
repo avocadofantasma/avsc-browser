@@ -1,0 +1,59 @@
+{
+  "name": "avsc-browser",
+  "version": "0.1.0",
+  "description": "Apache Avro serialization for the browser — a browser-compatible fork of avsc",
+  "author": "Carlos Estrada <carlosg.estrada94@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cgestrada/avsc-browser"
+  },
+  "bugs": {
+    "url": "https://github.com/cgestrada/avsc-browser/issues"
+  },
+  "homepage": "https://github.com/cgestrada/avsc-browser#readme",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup && node scripts/patch-esm.mjs",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "avro",
+    "avsc",
+    "browser",
+    "serialization",
+    "schema",
+    "vite",
+    "react",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/readable-stream": "^4.0.23",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "readable-stream": "^4.7.0"
+  }
+}
