@@ -6,12 +6,12 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cgestrada/avsc-browser"
+    "url": "https://github.com/avocadofantasma/avsc-browser"
   },
   "bugs": {
-    "url": "https://github.com/cgestrada/avsc-browser/issues"
+    "url": "https://github.com/avocadofantasma/avsc-browser/issues"
   },
-  "homepage": "https://github.com/cgestrada/avsc-browser#readme",
+  "homepage": "https://github.com/avocadofantasma/avsc-browser#readme",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",

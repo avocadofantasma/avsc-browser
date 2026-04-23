@@ -259,7 +259,7 @@ import { Type } from 'avsc-browser'
 Bug reports and pull requests are welcome. The source is in `src/` — all files are plain CommonJS, bundled for the browser via [tsup](https://tsup.egoist.dev/).
 
 ```bash
-git clone https://github.com/cgestrada/avsc-browser
+git clone https://github.com/avocadofantasma/avsc-browser
 cd avsc-browser
 npm install
 npm run build   # outputs to dist/
